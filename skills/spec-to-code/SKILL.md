@@ -47,15 +47,17 @@ Read `references/spec_template.md` and conduct thorough interview covering:
 - [Wait for answer]
 - "How long should cart data be retained? (Session-based, 30 days, 90 days?)"
 
-### 2. Generate Documentation
+### 2. Generate Documentation & GitHub Issue
 
 Create specification document using the template structure, including decisions and rationale.
 
-### 3. Create GitHub Issue
+Then generate GitHub issue from the specification with:
+- Acceptance criteria
+- Test scenarios
+- Implementation files needed
+- Technical approach and tradeoffs
 
-Read `references/issue_template.md` and generate complete issue with acceptance criteria and test scenarios.
-
-### 4. Follow TDD
+### 3. Follow TDD
 
 Read `references/tdd_guide.md` and guide through Red-Green-Refactor cycle.
 
@@ -70,5 +72,4 @@ Read `references/tdd_guide.md` and guide through Red-Green-Refactor cycle.
 ## References
 
 - `references/spec_template.md` - Specification interview template
-- `references/tdd_guide.md` - TDD workflow guide  
-- `references/issue_template.md` - GitHub issue template
+- `references/tdd_guide.md` - TDD workflow guide
