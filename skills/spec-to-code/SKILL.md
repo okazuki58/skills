@@ -1,75 +1,75 @@
 ---
 name: spec-to-code
-description: Guide for specification-driven development workflow. Use when users want to (1) conduct specification interviews to clarify requirements, (2) follow test-driven development (TDD) practices, (3) generate GitHub issues from specifications, or (4) establish a structured development workflow from requirements to implementation. Language and framework agnostic.
+description: 仕様駆動開発ワークフローのガイド。ユーザーが (1) 要件を明確化するための仕様インタビューを実施したい、(2) テスト駆動開発 (TDD) を実践したい、(3) 仕様からGitHub Issueを生成したい、(4) 要件から実装までの構造化された開発ワークフローを確立したい場合に使用します。言語・フレームワーク非依存。
 ---
 
-# Spec-to-Code Development Workflow
+# 仕様→コード 開発ワークフロー
 
-This skill guides you through a comprehensive development workflow from specification to implementation.
+仕様から実装までの包括的な開発ワークフローをガイドします。
 
-## Workflow Overview
+## ワークフロー概要
 
 ```
-1. Specification Interview → 2. Documentation → 3. GitHub Issue → 4. TDD → 5. Implementation
+1. 仕様インタビュー → 2. ドキュメント化 → 3. GitHub Issue → 4. TDD → 5. 実装
 ```
 
-## When to Use
+## 使用タイミング
 
-- Starting new features or projects
-- Requirements are unclear
-- Following TDD practices
-- Creating structured GitHub issues
+- 新機能やプロジェクトを開始する時
+- 要件が不明確な時
+- TDDを実践したい時
+- 構造化されたGitHub Issueを作成したい時
 
-## Usage Instructions
+## 使用方法
 
-### 1. Specification Interview
+### 1. 仕様インタビュー
 
-**CRITICAL**: When conducting specification interviews, you MUST use the AskUserQuestionTool to ask questions one at a time. Do NOT list multiple questions in a single message.
+**重要**: 仕様インタビューを実施する際は、**必ずAskUserQuestionToolを使って1問ずつ質問すること**。複数の質問を1つのメッセージにまとめないこと。
 
-Read `references/spec_template.md` and conduct thorough interview covering:
-- Technical implementation
-- UI/UX considerations
-- Performance and security
-- Edge cases and tradeoffs
+`references/spec_template.md` を読んで、以下について徹底的にインタビュー：
+- 技術実装
+- UI/UX考慮事項
+- パフォーマンスとセキュリティ
+- エッジケースとトレードオフ
 
-**Interview Process**:
-1. Read the spec_template.md to understand what information is needed
-2. Use AskUserQuestionTool to ask ONE focused question at a time
-3. Wait for the user's response
-4. Based on their answer, ask the next most relevant question
-5. Continue until all critical aspects are covered
-6. Avoid obvious questions - focus on non-trivial design decisions
+**インタビューの進め方**:
+1. spec_template.mdを読んで必要な情報を把握
+2. AskUserQuestionToolで1つの質問をする
+3. ユーザーの回答を待つ
+4. 回答に基づいて次の質問をする
+5. すべての重要な点をカバーするまで繰り返す
+6. 自明な質問は避け、非自明な設計判断に焦点を当てる
 
-**Example Question Flow**:
-- "How should cart data be persisted? (Redis sessions vs Database vs Hybrid approach)"
-- [Wait for answer]
-- "What should happen when a product in the cart goes out of stock?"
-- [Wait for answer]
-- "How long should cart data be retained? (Session-based, 30 days, 90 days?)"
+**質問の流れの例**:
+- "カートデータの永続化方法は？（Redisセッション vs データベース vs ハイブリッド）"
+- [回答を待つ]
+- "カート内の商品が在庫切れになった場合、どう処理する？"
+- [回答を待つ]
+- "カートデータの保持期間は？（セッションベース、30日、90日？）"
 
-### 2. Generate Documentation & GitHub Issue
+### 2. ドキュメント化とGitHub Issue生成
 
-Create specification document using the template structure, including decisions and rationale.
+テンプレート構造を使用して仕様書を作成。決定事項と根拠を含める。
 
-Then generate GitHub issue from the specification with:
-- Acceptance criteria
-- Test scenarios
-- Implementation files needed
-- Technical approach and tradeoffs
+次に、仕様書から以下を含むGitHub Issueを生成：
+- 受け入れ基準
+- テストシナリオ
+- 実装に必要なファイル一覧
+- 技術的アプローチとトレードオフ
 
-### 3. Follow TDD
+### 3. TDD実践
 
-Read `references/tdd_guide.md` and guide through Red-Green-Refactor cycle.
+`references/tdd_guide.md` を読んでRed-Green-Refactorサイクルをガイド。
 
-## Key Principles
+## 重要な原則
 
-- **Specificity over ambiguity**: Concrete requirements only
-- **Document the "why"**: Rationale is crucial
-- **Test-first approach**: Write tests before implementation
-- **Language agnostic**: Works with any tech stack
-- **Interactive interviews**: Use AskUserQuestionTool for one question at a time
+- **曖昧さより具体性**: 具体的な要件のみ
+- **「なぜ」を記録**: 根拠が重要
+- **テストファースト**: 実装前にテストを書く
+- **言語非依存**: あらゆる技術スタックで動作
+- **対話型インタビュー**: AskUserQuestionToolで1問ずつ質問
 
-## References
+## リファレンス
 
-- `references/spec_template.md` - Specification interview template
-- `references/tdd_guide.md` - TDD workflow guide
+- `references/spec_template.md` - 仕様インタビューテンプレート
+- `references/tdd_guide.md` - TDDワークフローガイド
