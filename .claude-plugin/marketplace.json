@@ -1,0 +1,13 @@
+{
+  "name": "okazuki-skills",
+  "owner": {
+    "name": "Kazuki Ogawa"
+  },
+  "plugins": [
+    {
+      "name": "spec-to-code",
+      "source": "./skills/spec-to-code",
+      "description": "仕様駆動開発ワークフロー"
+    }
+  ]
+}
