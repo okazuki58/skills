@@ -4,9 +4,30 @@
 
 ## 🚀 インストール
 
+### 1. マーケットプレイスを追加
+
 ```bash
-/plugin install https://github.com/okazuki58/skills
+/plugin marketplace add okazuki58/skills
 ```
+
+### 2. スキルをインストール
+
+```bash
+# 個別にインストール（例：feature-spec-generator）
+/plugin install feature-spec-generator@okazuki-skills
+
+# または対話的なUIで選択
+/plugin
+```
+
+利用可能なスキル：
+- `goal-management@okazuki-skills`
+- `maclogger-review@okazuki-skills`
+- `profile-builder@okazuki-skills`
+- `feature-spec-generator@okazuki-skills`
+- `spec-to-code@okazuki-skills`
+- `learning-support@okazuki-skills`
+- `task-management@okazuki-skills`
 
 ## 📁 利用可能なSkills
 
