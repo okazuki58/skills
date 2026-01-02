@@ -7,6 +7,26 @@ description: "週次目標の達成状況を確認し、次週へのアクショ
 
 目標達成状況に焦点を当てた簡潔な振り返りを生成。週次目標と比較し、次週のアクションを明確化。約30-50行のマークダウンとして `/Users/ogawakazuki/dev/xincere-review/reviews/` に出力。
 
+## ⚠️ 重要: 環境設定
+
+**このスキルは作者の環境に特化しています。** 使用前に以下のパスを自分の環境に合わせて変更してください：
+
+1. このファイル（`~/.claude/skills/maclogger-review/SKILL.md`）を開く
+2. 以下の出力先パスを検索して変更:
+   - `/Users/ogawakazuki/dev/xincere-review/reviews/` → あなたの振り返り保存先
+   - `/Users/ogawakazuki/dev/maclogger/reports/` → あなたのログ保存先
+
+または、以下の手順で初回セットアップを行ってください：
+
+1. 振り返りファイルの保存先ディレクトリを作成:
+   ```bash
+   mkdir -p ~/reviews/weekly ~/reviews/monthly
+   ```
+
+2. このSKILL.mdファイル内の全てのパスを置換:
+   - `/Users/ogawakazuki/dev/xincere-review/reviews/` → `~/reviews/`
+   - `/Users/ogawakazuki/dev/maclogger/reports/` → （あなたのログディレクトリ、または削除）
+
 ## 振り返りモード
 
 ### モード1: 自動振り返り

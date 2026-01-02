@@ -7,6 +7,17 @@ description: "目標設定を支援。年間目標→半期→月次→週次の
 
 会社の評価基準（3つのValue: Be hungry/Be an owner/Be sustainable）に基づいた階層的な目標設定（年間→半期→月次→週次）をサポート。
 
+## ⚠️ 重要: 環境設定
+
+**このスキルは特定の会社評価基準に基づいています。** 使用前に以下をカスタマイズしてください：
+
+1. `~/.claude/skills/goal-management/references/grades.md` - 自社のグレード制度に変更
+2. `~/.claude/skills/goal-management/references/values.md` - 自社の評価基準（Value定義）に変更
+
+**初回使用時のチェック:**
+- プロジェクトルートに `my-profile/` ディレクトリが存在しない場合、まず `profile-builder` スキルでプロフィールを作成してください
+- 目標ファイルは自動的に `goals/` ディレクトリに保存されます
+
 **会社の半期定義**:
 - H1（前半期）: 3-8月（6ヶ月）
 - H2（後半期）: 9-2月（6ヶ月）

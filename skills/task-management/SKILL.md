@@ -7,6 +7,20 @@ description: "リポジトリベースのタスク管理サポート。ユーザ
 
 対話的計画立案、体系的な分解、自動化されたGitHub Projects/Issuesセットアップを通じて、GitHubリポジトリベースのタスク管理をサポート。
 
+## 前提条件
+
+このスキルは **GitHub CLI (`gh`)** と **GitHubリポジトリ** が必要です。
+
+```bash
+# GitHub CLIのインストール（macOS）
+brew install gh
+
+# 認証
+gh auth login
+```
+
+現在のディレクトリがGitHubリポジトリでない場合、またはGitHub CLIが利用できない場合は、タスク分解と計画立案のみを提供できます。
+
 ## ワークフロー
 
 1. リポジトリ分析
