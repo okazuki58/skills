@@ -3,36 +3,24 @@
   "owner": {
     "name": "Kazuki Ogawa"
   },
+  "metadata": {
+    "description": "開発ワークフローと学習を効率化するClaude Skills集",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
-      "name": "goal-management",
-      "source": "./skills/goal-management",
-      "description": "目標設定支援（年間→半期→月次→週次の階層的分解、maclogger連携）"
-    },
-    {
-      "name": "maclogger-review",
-      "source": "./skills/maclogger-review",
-      "description": "週次目標の達成状況確認・振り返り生成（壁打ち形式サポート）"
-    },
-    {
-      "name": "profile-builder",
-      "source": "./skills/profile-builder",
-      "description": "10分で完成する簡潔なプロフィール作成"
-    },
-    {
-      "name": "spec-to-code",
-      "source": "./skills/spec-to-code",
-      "description": "仕様駆動・テスト駆動開発ワークフロー"
-    },
-    {
-      "name": "learning-support",
-      "source": "./skills/learning-support",
-      "description": "包括的な学習サポート（あらゆるトピック対応、GitHub Issue駆動）"
-    },
-    {
-      "name": "task-management",
-      "source": "./skills/task-management",
-      "description": "リポジトリベースのタスク管理支援（GitHub Projects + Issues）"
+      "name": "okazuki-skills",
+      "description": "目標管理、学習サポート、タスク管理、仕様駆動開発を含む包括的なワークフロー支援スキル集",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/goal-management",
+        "./skills/maclogger-review",
+        "./skills/profile-builder",
+        "./skills/spec-to-code",
+        "./skills/learning-support",
+        "./skills/task-management"
+      ]
     }
   ]
 }
