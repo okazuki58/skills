@@ -4,9 +4,10 @@
 
 ## インストール
 
-全てのスキルを一括インストール：
+マーケットプレイスを追加してからインストール：
 
 ```bash
+/plugin marketplace add okazuki58/skills
 /plugin install okazuki-skills@okazuki-skills
 ```
 
